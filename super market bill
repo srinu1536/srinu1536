@@ -1,0 +1,30 @@
+soap=20
+chocolate=80
+oil=40
+book=30
+biscuit=25
+bag=500
+cname=("enter customer name:")
+cellno=("enter customer mobile no.:")
+s=int(input("enter no. of soaps:"))
+c=int(input("enter no. of chocolate:"))
+o=int(input("enter no. of oil packets:"))
+bo=int(input("enter no. of books:"))
+bi=int(input("enter no. of biscuit_packets:"))
+ba=int(input("enter no. of bags:"))
+bill=(s*soap)+(c*chocolate)+(o*oil)+(bo*book)+(bi*biscuit)+(ba*bag)
+print(bill)
+if bill>5000:
+    dis=bill*10/100
+elif bill>3000:
+    dis=bill*8/100
+elif bill>2000:
+    dis=bill*5/100
+elif bill>1000:
+    dis=bill*3/100
+if bill>3000:
+    tax=bill*10/100
+else:
+    tax=bill*18/100
+mainbill=bill-dis+tax
+print(mainbill)
