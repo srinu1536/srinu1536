@@ -1,0 +1,15 @@
+n = int(input())
+c = 0
+l = []
+e = []
+for i in range(n):
+    x = int(input())
+    l.append(x)
+for i in l:
+    if(i != 0):
+        c += 1
+        e.append(i)
+print('The Number Of Non-Zero Elements In Given List Is --> ', c)
+print('The Non-Zero Elements In Given List Are --> ', end="")
+for i in e:
+    print(i, end=" ")
